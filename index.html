@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EagleLabs Consulting</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0a0a0a;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .header {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+      color: #00d1b2;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+      position: relative;
+      top: 60px;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      color: #000000;
+      background: #00d1b2;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .about,
+    .services,
+    .contact {
+      width: 100%;
+      padding: 80px 0;
+    }
+
+    .about {
+      background-color: #111111;
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .about p,
+    .services p,
+    .contact p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .services {
+      background-color: #0a0a0a;
+    }
+
+    .service-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service-item {
+      background: #1a1a1a;
+      padding: 30px;
+      margin: 20px;
+      flex: 1 1 30%;
+      min-width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .service-item h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #00d1b2;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .service-item p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .contact {
+      background-color: #111111;
+    }
+
+    .footer {
+      background-color: #0f0f0f;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    .hero {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+      position: relative;
+      top: 60px;
+    }
+
+    .hero h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      /* Reduce margin to create more space between headings */
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+      max-width: 600px;
+      line-height: 1.6;
+      color: #00d1b2;
+      font-weight: bold;
+      text-align: center;
+      /* Center-align the slogan */
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">EagleLabs</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>EagleLabs Consulting</h1>
+      <p>Architecting The Future</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At EagleLabs Consulting, we are dedicated to architecting the future. With a commitment to software engineering
+        excellence, strategic engineering consultancy, and active open-source contribution, we strive to shape the
+        future of technology. Our team combines expertise, innovation, and a passion for community-driven collaboration
+        to drive forward progress and empower businesses to thrive in the digital age.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>What We Do</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>Software Engineering</h3>
+          <p>Designing and building software with cutting-edge technologies, crafting tailored solutions with the latest
+            tech, and creating innovative software using up-to-date technologies.</p>
+        </div>
+        <div class="service-item">
+          <h3>Engineering Consultancy</h3>
+          <p>Providing expert consultancy for companies and startups, offering strategic engineering advisory services,
+            and guiding businesses with technical consultancy and advice.</p>
+        </div>
+        <div class="service-item">
+          <h3>Open Source Contribution</h3>
+          <p>Actively participating in the open-source community by contributing code, expertise, and resources to
+            collaborative projects. Through our commitment to open source, we foster innovation, support
+            community-driven initiatives, and contribute to the advancement of technology for the benefit of all.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 EagleLabs Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
